@@ -50,16 +50,17 @@
 ## 🚀 Швидкий старт та запуск
 
 ### Вимоги:
-- **Node.js** (версія 18 або новіша)
-- **npm** (або pnpm/yarn)
+- **Node.js** (v18+) або **Bun** (v1.0+)
+- **npm** або **bun**
 
 ### 1. Встановлення залежностей
 
 У кореневій директорії виконайте:
 ```bash
-npm run install:all
+bun run install:all
+# або: npm run install:all
 ```
-*(або окремо `cd backend && npm install`, потім `cd ../frontend && npm install`)*
+*(або окремо `cd backend && bun install`, потім `cd ../frontend && bun install`)*
 
 ---
 
@@ -67,11 +68,12 @@ npm run install:all
 
 ```bash
 # З кореневої директорії:
-npm run dev:backend
+bun run dev:backend
+# або: npm run dev:backend
 
-# Або перейдіть у папку backend:
+# Або з папки backend:
 cd backend
-npm run start:dev
+bun run start:dev
 ```
 - Сервер запуститься за адресою: `http://localhost:3000`
 - API Endpoint: `http://localhost:3000/items`
@@ -84,11 +86,12 @@ npm run start:dev
 У **новому терміналі**:
 ```bash
 # З кореневої директорії:
-npm run dev:frontend
+bun run dev:frontend
+# або: npm run dev:frontend
 
-# Або перейдіть у папку frontend:
+# Або з папки frontend:
 cd frontend
-npm run dev
+bun run dev
 ```
 - Клієнт відкриється за адресою: `http://localhost:5173`
 - Натисніть кнопку **«Load items»** для завантаження товарів із сервера.
